@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>All Groupings</title>
+    <link rel="stylesheet" href="/static/home.css">
+</head>
+<body>
+
+{% for key,value in groupings.items(): %}
+<div class="rcorners2">
+<div class="topic">Topic: {{ value.topic }}</div>
+<div class="leader">Leader: {{ value.leader }} ({{ p[value.leader].location}})</div>
+<div class="participantList">
+    Participants:
+<ul>
+{% for e in value.participants: %}
+<li><div class="participant">{{ e }} ({{ p[e].location }})</div></li>
+{% endfor %}
+</ul>
+</div>
+</div>
+{% endfor %}
+</div>
+
+<div class="unassignedList">
+<fieldset> 
+    <legend>Unassigned</legend>
+    <ul>
+{% for i in unassigned: %}
+<li>
+    {{ i.login }} - {{ i.interests }}
+</li>
+{% endfor %}
+    </ul>
+</fieldset>
+</div>
+
+
+</body>
+</html>

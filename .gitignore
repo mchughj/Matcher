@@ -1,0 +1,7 @@
+__pycache__
+env/
+*.pyc
+github_token.txt
+input*
+finalAssignments
+pregen*
