@@ -16,7 +16,6 @@ You must use python 3.7 or beyond so that the @dataclass works.
    ```
 1. Create a new virtual environment within the same directory as the git repository.
    ```
-   cd LearningMatcher
    python3.7 -m virtualenv --python=python3.7 env
    ```
 1. Activate the new virtual environment
