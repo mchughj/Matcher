@@ -1,5 +1,5 @@
 
-# LearningMatcher 
+# Matcher 
 
 A simple set of scripts that helps connect people who are interested in learning about things with those who are proficient.  
 
