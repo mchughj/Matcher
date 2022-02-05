@@ -9,8 +9,6 @@ import match
 import sesEmailer
 import sys
 
-from collections import defaultdict
-
 logging.basicConfig(
         stream=sys.stdout,
         level=logging.INFO, 
